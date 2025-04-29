@@ -1,0 +1,6 @@
+tabs:
+  main:
+    display: Hauptteil
+    sections:
+      -
+        display: 'Neuer Abschnitt'

@@ -1,0 +1,57 @@
+title: Mitglieder
+tabs:
+  main:
+    display: Hauptteil
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+          -
+            handle: name
+            field:
+              type: text
+              validate:
+                - required
+              display: Name
+          -
+            handle: funktion
+            field:
+              type: text
+              display: Funktion
+          -
+            handle: bild
+            field:
+              max_files: 1
+              min_files: 1
+              container: assets
+              type: assets
+              display: Bild
+          -
+            handle: author
+            field:
+              type: users
+              display: Author
+              default: current
+              localizable: true
+              max_items: 1
+          -
+            handle: template
+            field:
+              type: template
+              display: Template
+              localizable: true
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'

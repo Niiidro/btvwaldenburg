@@ -1,0 +1,12 @@
+tree:
+  -
+    id: b458e061-5cfe-4036-9955-0262e84550e7
+    title: Home
+  -
+    id: db469600-f311-4f33-9923-294d551f5512
+    title: Programm
+    url: /events
+  -
+    id: 91fe8878-b1a0-40cf-9a85-ac1abe1d7539
+    title: Team
+    url: /members
