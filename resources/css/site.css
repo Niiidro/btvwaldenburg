@@ -3,20 +3,34 @@
 @theme {
   --color-primary: #FFD700;
   --color-secondary: #121212;
+  --font-sans: "Montserrat", sans-serif;
 }
 
 h1 {
   color: var(--color-secondary);
+  font-family: "Cal Sans", sans-serif;
   font-size: 2.5rem;
-  font-weight: semibold;
-  margin-bottom: 1rem;
-  margin-top: 0.5rem;
+  font-weight: 600;
 }
 
 h2 {
   color: var(--color-secondary);
+  font-family: "Cal Sans", sans-serif;
   font-size: 1.75rem;
   font-weight: semibold;
-  margin-bottom: 0.75rem;
-  margin-top: 0.5rem;
+}
+
+h3 {
+  color: var(--color-secondary);
+  font-family: "Cal Sans", sans-serif;
+  @apply text-xl sm:text-2xl;
+  font-weight: semibold;
+}
+
+.news-content p {
+  @apply line-clamp-2;
+}
+
+nav .current {
+  @apply font-bold border-b-3
 }

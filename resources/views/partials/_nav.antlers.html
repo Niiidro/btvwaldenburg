@@ -7,8 +7,8 @@
         </a>
         <ul class="flex h-full grow justify-end">
             {{ nav:main }}
-            <li class="h-full">
-                <a class="h-full flex items-center px-4" href="{{ url }}">{{ title }}</a>
+            <li class="{{ if is_current }}bg-secondary text-primary{{ /if }} hover:text-primary hover:bg-secondary transition-all">
+                <a class="h-full flex items-center px-4 font-semibold" href="{{ url }}">{{ title }}</a>
             </li>
             {{ /nav:main }}
         </ul>

@@ -1,12 +1,5 @@
-<div class="grid grid-cols-2 gap-5">
-    <div class="flex flex-col gap-5">
-        {{ collection:news }}
-          {{ partial:partials/news }}
-        {{ /collection:news}}
-      </div>
-      <div class="flex flex-col gap-5">
-        {{ collection:events }}
-          {{ partial:partials/event }}
-        {{ /collection:events}}
-      </div>
+<div class="grid md:grid-cols-2 xl:grid-cols-3 gap-5 sm:gap-10">
+  {{ collection:news }}
+    {{ partial:partials/news }}
+  {{ /collection:news}}
 </div>

@@ -1,10 +1,17 @@
 <div>
-  {{partial:partials/_card}}
-  <div>
-    <div>{{dates.start | format('d.m.y')}} - {{dates.start | format('d.m.y')}}</div>
-    <div>{{content}}</div>
-    <div>{{location}}</div>
-    <div>{{groups}}</div>
-  </div>
-  {{/partial:partials/_card}}
+  <dl class="grid grid-cols-[max-content_auto] gap-x-3 ">
+    <dt class="font-bold">Datum:</dt>
+    <dd>
+      {{ if dates:start == dates:end }}
+        {{ dates.start | format('d.m.y') }}
+      {{ else }}
+        {{ dates.start | format('d.m') }} - {{ dates.end | format('d.m.y') }}
+      {{ /if }}
+    </dd>
+    <dt class="font-bold">Ort:</dt>
+    <dd>{{ location }}</dd>
+
+    <dt class="font-bold">Riegen:</dt>
+    <dd>{{ groups }}</dd>
+  </dl>
 </div>
