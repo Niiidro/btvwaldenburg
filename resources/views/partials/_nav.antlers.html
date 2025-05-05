@@ -1,14 +1,16 @@
-<nav class="container mx-auto flex justify-between items-center h-full px-5">
-  <a class="h-full flex items-center" href="/">
-      {{ assets }}
-      <img src="https://btv.test/assets/logo.webp" alt="{{ alt }}" class="h-10" />
-      {{ /assets }}
-  </a>
-  <ul class="flex h-full grow justify-end">
-      {{ nav:main }}
-      <li class="h-full">
-          <a class="h-full flex items-center px-4" href="{{ url }}">{{ title }}</a>
-      </li>
-      {{ /nav:main }}
-  </ul>
+<nav class="flex justify-between items-center px-5 h-14 bg-primary text-secondary">
+    <div class="container mx-auto h-full flex items-center">
+        <a class="h-full flex items-center" href="/">
+            {{ assets }}
+            <img src="https://btv.test/assets/logo.webp" alt="{{ alt }}" class="h-10" />
+            {{ /assets }}
+        </a>
+        <ul class="flex h-full grow justify-end">
+            {{ nav:main }}
+            <li class="h-full">
+                <a class="h-full flex items-center px-4" href="{{ url }}">{{ title }}</a>
+            </li>
+            {{ /nav:main }}
+        </ul>
+    </div>
 </nav>

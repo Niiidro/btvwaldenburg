@@ -1,5 +1,20 @@
-<div>
-  {{ collection:events }}
-  {{ title }}
-{{ /collection:events}}
+
+<div class="border-b">
+  <div class="flex flex-nowrap font-bold">
+    <div class="w-[20%] px-2 py-1">
+      Datum
+    </div>
+    <div class="w-[50%] px-2 py-1">
+      Event
+    </div>
+    <div class="w-[15%] px-2 py-1">
+      Ort
+    </div>
+    <div class="w-[15%] px-2 py-1">
+      Riegen
+    </div>
+  </div>
+  {{ collection:events sort="dates:start:asc" }}
+    {{ partial:partials/event }}
+  {{ /collection:events }}
 </div>

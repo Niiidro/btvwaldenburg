@@ -3,6 +3,10 @@ tree:
     id: aa9a957a-d7a1-4b66-b2e4-8ad97b1a5d36
     title: Home
   -
+    id: ba686586-0b2c-4710-b445-19663171908a
+    title: News
+    url: /news
+  -
     id: 69dced3a-da17-4548-abc7-e1f3e056807b
     title: Programm
     url: /events

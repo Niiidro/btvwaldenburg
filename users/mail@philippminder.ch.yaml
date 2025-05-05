@@ -4,3 +4,10 @@ password_hash: $2y$12$AWfsPA3NDEoP4dwLotc9FuzhaSW6lI10Y/K/OUCtqKNXwcOAmEMyC
 preferences:
   locale: de_CH
   favorites: {  }
+  collections:
+    members:
+      columns:
+        - title
+        - slug
+        - status
+        - categories_functions

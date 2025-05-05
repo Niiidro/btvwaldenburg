@@ -10,34 +10,41 @@ tabs:
             field:
               type: text
               required: true
-          -
-            handle: name
-            field:
-              type: text
               validate:
                 - required
-              display: Name
           -
-            handle: funktion
+            handle: images
             field:
-              type: text
-              display: Funktion
-          -
-            handle: bild
-            field:
-              max_files: 1
-              min_files: 1
+              mode: grid
               container: assets
               type: assets
-              display: Bild
+              display: Bilder
+              max_files: 2
           -
-            handle: author
+            handle: categories_functions
             field:
-              type: users
-              display: Author
-              default: current
-              localizable: true
-              max_items: 1
+              type: grid
+              display: 'Funktionen & Kategorien'
+              fields:
+                -
+                  handle: categories
+                  field:
+                    max_items: 1
+                    mode: select
+                    taxonomies:
+                      - member_categories
+                    type: terms
+                    display: Kategorien
+                -
+                  handle: function
+                  field:
+                    type: text
+                    display: Funktion
+                -
+                  handle: sort
+                  field:
+                    type: integer
+                    display: Sortierung
           -
             handle: template
             field:
@@ -55,3 +62,12 @@ tabs:
               type: slug
               localizable: true
               validate: 'max:200'
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - members
+              max_items: 1
+              listable: false
+              localizable: true

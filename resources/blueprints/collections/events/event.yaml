@@ -13,18 +13,18 @@ tabs:
               validate:
                 - required
           -
-            handle: datum
+            handle: dates
             field:
               mode: range
               type: date
               display: Datum
           -
-            handle: riegen
+            handle: groups
             field:
               type: text
               display: Riegen
           -
-            handle: ort
+            handle: location
             field:
               type: text
               display: Ort
@@ -34,14 +34,6 @@ tabs:
               type: markdown
               display: Content
               localizable: true
-          -
-            handle: author
-            field:
-              type: users
-              display: Author
-              default: current
-              localizable: true
-              max_items: 1
           -
             handle: template
             field:
