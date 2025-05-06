@@ -13,7 +13,7 @@
     {{ vite src="resources/js/site.js|resources/css/site.css" }}
 </head>
 
-<body class="bg-slate-100 dark:bg-gray-800 font-sans leading-normal text-slate-800 dark:text-gray-400">
+<body class="bg-slate-100  font-sans leading-normal text-slate-800">
     <header>
         {{partial:partials/nav}}
         {{if current_uri != "/" }}
@@ -26,11 +26,12 @@
         <img src="{{ hero:image }}" class="hidden md:block object-cover h-120 w-full" />
         {{ /if}}
     </header>
-    <div class="flex px-5 pt-8">
+    <div class="flex px-5 py-8">
         <div class="mx-auto lg:min-h-screen flex flex-col container">
             {{ template_content }}
         </div>
     </div>
+    {{partial:partials/footer}}
 </body>
 
 </html>

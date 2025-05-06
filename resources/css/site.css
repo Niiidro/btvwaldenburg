@@ -27,6 +27,12 @@ h3 {
   font-weight: semibold;
 }
 
+h4 {
+  font-family: "Cal Sans", sans-serif;
+  @apply text-lg sm:text-xl;
+  font-weight: medium;
+}
+
 .news-content p {
   @apply line-clamp-2;
 }
