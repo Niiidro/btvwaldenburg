@@ -1,14 +1,29 @@
-<nav class="flex justify-between items-center px-5 h-14 bg-primary text-secondary">
-    <div class="container mx-auto h-full flex items-center">
+<!-- Desktop Navigation -->
+<nav class="flex flex-col">
+    <div class="container mx-auto justify-between flex items-center bg-primary text-secondary px-5 h-14 ">
         <a class="h-full flex items-center" href="/">
-            {{ assets }}
-            <img src="https://btv.test/assets/logo.webp" alt="{{ alt }}" class="h-10" />
-            {{ /assets }}
+            <img src="https://btv.test/assets/logo.webp" alt="Logo" class="h-10" />
         </a>
-        <ul class="flex h-full grow justify-end">
+        <ul class="hidden sm:flex h-full grow justify-end">
             {{ nav:main }}
             <li class="{{ if is_current }}bg-secondary text-primary{{ /if }} hover:text-primary hover:bg-secondary transition-all">
                 <a class="h-full flex items-center px-4 font-semibold" href="{{ url }}">{{ title }}</a>
+            </li>
+            {{ /nav:main }}
+        </ul>
+        <button id="mobile-menu-open" type="button" class="cursor-pointer sm:hidden">
+            <i class="fa-sharp fa-solid fa-bars fa-2xl"></i>
+        </button>
+        <button id="mobile-menu-close" type="button" class="cursor-pointer hidden">
+            <i class="fa-sharp fa-solid fa-times fa-2xl"></i>
+        </button>
+        
+    </div>
+    <div class="absolute top-14 left-0 border-t right-0 bg-primary bottom-0 hidden" id="mobile-menu">
+        <ul class="flex flex-col h-full">
+            {{ nav:main }}
+            <li class="{{ if is_current }}bg-secondary text-primary{{ /if }} hover:text-primary hover:bg-secondary transition-all">
+                <a class="h-full flex items-center p-4 font-semibold" href="{{ url }}">{{ title }}</a>
             </li>
             {{ /nav:main }}
         </ul>
