@@ -11,7 +11,7 @@ return [
     ],
 
     'assets' => [
-        'driver' => 'eloquent',
+        'driver' => 'file',
         'model' => \Statamic\Eloquent\Assets\AssetModel::class,
         'asset' => \Statamic\Eloquent\Assets\Asset::class,
     ],
