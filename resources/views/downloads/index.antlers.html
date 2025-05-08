@@ -1,0 +1,5 @@
+<div class="border-t">
+  {{ collection:downloads where="download_categories:{slug}" sort="dates:start:asc" }}
+    {{ partial:partials/download }}
+  {{ /collection:downloads }}
+</div>

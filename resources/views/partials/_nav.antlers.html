@@ -1,6 +1,6 @@
 <!-- Desktop Navigation -->
-<nav class="flex flex-col">
-    <div class="container mx-auto justify-between flex items-center bg-primary text-secondary px-5 h-14 ">
+<nav class="flex flex-col bg-primary text-secondary">
+    <div class="container mx-auto justify-between flex items-center px-5 h-14">
         <a class="h-full flex items-center" href="/">
             <img src="https://btv.test/assets/logo.webp" alt="Logo" class="h-10" />
         </a>
@@ -20,7 +20,7 @@
         
     </div>
     <div class="absolute top-14 left-0 border-t right-0 bg-primary bottom-0 hidden" id="mobile-menu">
-        <ul class="flex flex-col h-full">
+        <ul class="flex flex-col  w-full h-full">
             {{ nav:main }}
             <li class="{{ if is_current }}bg-secondary text-primary{{ /if }} hover:text-primary hover:bg-secondary transition-all">
                 <a class="h-full flex items-center p-4 font-semibold" href="{{ url }}">{{ title }}</a>
@@ -29,3 +29,22 @@
         </ul>
     </div>
 </nav>
+<script>
+    const mobileMenuOpen = document.getElementById('mobile-menu-open');
+    const mobileMenuClose = document.getElementById('mobile-menu-close');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuOpen.addEventListener('click', () => {
+        mobileMenu.classList.remove('hidden');
+        mobileMenu.classList.add('flex');
+        mobileMenuOpen.classList.add('hidden');
+        mobileMenuClose.classList.remove('hidden');
+    });
+
+    mobileMenuClose.addEventListener('click', () => {
+        mobileMenu.classList.remove('flex');
+        mobileMenu.classList.add('hidden');
+        mobileMenuOpen.classList.remove('hidden');
+        mobileMenuClose.classList.add('hidden');
+    });
+</script>

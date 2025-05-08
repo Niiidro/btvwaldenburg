@@ -3,3 +3,7 @@ tree:
     id: f0c5ef0b-d5f4-438b-a901-a2cc0a886ec3
     title: 'Datenschutz / Impressum'
     url: /datenschutz-impressum
+  -
+    id: 111d5b47-93b2-4909-84d1-8f3ed029b8a1
+    title: Downloads
+    url: /downloads
