@@ -11,3 +11,5 @@ preferences:
         - slug
         - status
         - categories_functions
+    events:
+      after_save: create_another

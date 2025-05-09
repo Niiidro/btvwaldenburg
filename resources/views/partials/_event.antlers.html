@@ -2,9 +2,9 @@
   <div class=" hidden sm:flex flex-nowrap">
     <div class="w-[20%] px-2 py-1">
       {{ if dates:start == dates:end }}
-        {{ dates.start | format('d.m.y') }}
+      {{ dates.start | format('d.m.y') }}
       {{ else }}
-        {{ dates.start | format('d.m') }} - {{ dates.end | format('d.m.y') }}
+      {{ dates.start | format('d.m') }} - {{ dates.end | format('d.m.y') }}
       {{ /if }}
     </div>
     <div class="w-[50%] px-2 py-1">
@@ -18,23 +18,23 @@
     </div>
   </div>
   <dl class="grid grid-cols-[max-content_auto] gap-x-3 sm:hidden">
-      <dt class="font-bold">Datum:</dt>
-      <dd>
-        {{ if dates:start == dates:end }}
-          {{ dates.start | format('d.m.y') }}
-        {{ else }}
-          {{ dates.start | format('d.m') }} - {{ dates.end | format('d.m.y') }}
-        {{ /if }}
-      </dd>
-      <dt class="font-bold">Event:</dt>
-      <dd>{{ title }}</dd>
- 
+    <dt class="font-bold">Datum:</dt>
+    <dd>
+      {{ if dates:start == dates:end }}
+      {{ dates.start | format('d.m.y') }}
+      {{ else }}
+      {{ dates.start | format('d.m') }} - {{ dates.end | format('d.m.y') }}
+      {{ /if }}
+    </dd>
+    <dt class="font-bold">Event:</dt>
+    <dd>{{ title }}</dd>
 
-      <dt class="font-bold">Ort:</dt>
-      <dd>{{ location }}</dd>
 
-      <dt class="font-bold">Riegen:</dt>
-      <dd>{{ groups }}</dd>
- 
-  </dl>  
-  </a>
+    <dt class="font-bold">Ort:</dt>
+    <dd>{{ location }}</dd>
+
+    <dt class="font-bold">Wer:</dt>
+    <dd>{{ groups }}</dd>
+
+  </dl>
+</a>

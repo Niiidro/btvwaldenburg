@@ -3,15 +3,15 @@
     <dt class="font-bold">Datum:</dt>
     <dd>
       {{ if dates:start == dates:end }}
-        {{ dates.start | format('d.m.y') }}
+      {{ dates.start | format('d.m.y') }}
       {{ else }}
-        {{ dates.start | format('d.m') }} - {{ dates.end | format('d.m.y') }}
+      {{ dates.start | format('d.m') }} - {{ dates.end | format('d.m.y') }}
       {{ /if }}
     </dd>
     <dt class="font-bold">Ort:</dt>
     <dd>{{ location }}</dd>
 
-    <dt class="font-bold">Riegen:</dt>
+    <dt class="font-bold">Wer:</dt>
     <dd>{{ groups }}</dd>
   </dl>
 </div>

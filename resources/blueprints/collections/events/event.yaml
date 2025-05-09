@@ -22,7 +22,7 @@ tabs:
             handle: groups
             field:
               type: text
-              display: Riegen
+              display: Wer
           -
             handle: location
             field:

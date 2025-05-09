@@ -4,11 +4,14 @@ blueprint: member
 title: 'Yvonne Ritter'
 function: 'Co- Präsidium'
 updated_by: 66165c6e-09da-45b9-a7cc-44b3754f7e49
-updated_at: 1746195964
+updated_at: 1746764744
 categories_functions:
   -
     id: ma6vjbof
     categories: vorstand
     function: Co-Präsidium
     sort: 2
+images:
+  - team/yvon_1.jpg
+  - team/yvon_2.jpg
 ---

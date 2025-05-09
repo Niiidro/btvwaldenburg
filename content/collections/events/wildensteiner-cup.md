@@ -5,11 +5,10 @@ title: 'Wildensteiner Cup'
 dates:
   start: '2025-05-03'
   end: '2025-05-04'
-groups: teste
-location: stset
+groups: 'Aktive / Jugend'
+location: Bubendorf
 author: 66165c6e-09da-45b9-a7cc-44b3754f7e49
 template: events/show
 updated_by: 66165c6e-09da-45b9-a7cc-44b3754f7e49
-updated_at: 1746100414
+updated_at: 1746764955
 ---
-ststst
