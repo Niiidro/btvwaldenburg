@@ -99,7 +99,7 @@ return [
     ],
 
     'sites' => [
-        'driver' => 'eloquent',
+        'driver' => 'file',
         'model' => \Statamic\Eloquent\Sites\SiteModel::class,
     ],
 ];
