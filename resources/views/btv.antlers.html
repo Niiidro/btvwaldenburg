@@ -1,0 +1,16 @@
+<div class="mt-5">
+  <h2>Vereine</h2>
+  <div class="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-x-3 gap-y-2">
+    {{ collection:teams sort="title" }}
+      {{ partial:partials/team }}
+    {{ /collection:teams }}
+  </div>
+</div>
+<div class="mt-5">
+    <h2>Vorstand & TK</h2>
+    <div class="grid justify-around sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5">
+      {{ collection:members sort="title" }}
+        {{ partial:partials/member }}
+      {{ /collection:members }}
+    </div>
+</div>

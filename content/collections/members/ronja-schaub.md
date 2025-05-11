@@ -4,11 +4,7 @@ blueprint: member
 title: 'Ronja Schaub'
 function: Administration/Protokoll
 updated_by: 66165c6e-09da-45b9-a7cc-44b3754f7e49
-updated_at: 1746195968
-categories_functions:
-  -
-    id: ma6vjoho
-    categories: vorstand
-    function: Administration/Protokoll
-    sort: 3
+updated_at: 1746979791
+functions:
+  - Administration/Protokoll
 ---

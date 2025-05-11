@@ -33,6 +33,11 @@ h4 {
   font-weight: medium;
 }
 
+h5 {
+  font-family: "Cal Sans", sans-serif;
+  @apply text-base sm:text-lg;
+  font-weight: medium;
+}
 .news-content p {
   @apply line-clamp-2;
 }

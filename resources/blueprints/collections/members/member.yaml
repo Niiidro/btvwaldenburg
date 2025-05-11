@@ -21,6 +21,11 @@ tabs:
               display: Bilder
               max_files: 2
           -
+            handle: functions
+            field:
+              type: list
+              display: Funktionen
+          -
             handle: categories_functions
             field:
               type: grid
@@ -71,3 +76,11 @@ tabs:
               max_items: 1
               listable: false
               localizable: true
+          -
+            handle: member_categories
+            field:
+              type: terms
+              taxonomies:
+                - member_categories
+              display: Mitgliederkategorien
+              mode: select

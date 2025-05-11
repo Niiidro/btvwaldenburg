@@ -4,19 +4,11 @@ blueprint: member
 title: 'Philipp Minder'
 function: 'Werbeauftritt + Kommunikation'
 updated_by: 66165c6e-09da-45b9-a7cc-44b3754f7e49
-updated_at: 1746764802
-categories_functions:
-  -
-    id: ma6vk5fr
-    categories: vorstand
-    function: 'Werbeauftritt + Kommunikation'
-    sort: 6
-  -
-    id: ma6vk8r8
-    categories: tk
-    function: Jugendleitertreff
-    sort: 7
+updated_at: 1746979838
 images:
   - team/philipp_1.jpg
   - team/philipp_2.jpg
+functions:
+  - 'Werbeauftritt + Kommunikation'
+  - Jugendleitertreff
 ---
